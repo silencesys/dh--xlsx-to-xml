@@ -1,0 +1,15 @@
+{
+  "name": "catalan-dictionary",
+  "version": "0.0.1-prototype",
+  "description": "Export xslx files to XML",
+  "main": "exporter.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Roček",
+  "license": "MIT",
+  "dependencies": {
+    "xlsx": "^0.17.2"
+  }
+}
