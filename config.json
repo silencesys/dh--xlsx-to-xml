@@ -1,0 +1,29 @@
+{
+  "parentTagName": "dictionary",
+  "rowTagName": "entry",
+  "stripTags": [
+    "<span style=\"font-size:12pt;\">",
+    "<span style=\"font-size:10pt;\">",
+    "<span style=\"font-size:6.5pt;\">",
+    "<span style=\"font-size:8pt;\">",
+    "<span style=\"font-size:10.5pt;\">",
+    "<span style=\"font-size:11pt;\">"
+  ],
+  "replaceTags": [
+    {
+      "from": "<span style=\"font-size:9pt;\">",
+      "to": "<topic>"
+    },
+    {
+      "from": "<span style=\"text-decoration: underline;font-size:12pt;\">",
+      "to": "<underline>"
+    },
+    {
+      "from": "<span style=\"text-decoration: underline;\">",
+      "to": "<underline>"
+    }
+  ],
+  "divideBy": [
+    [": ", "appendix"]
+  ]
+}
