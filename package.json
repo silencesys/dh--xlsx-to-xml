@@ -1,6 +1,6 @@
 {
   "name": "@silencesys/xlsx-to-xml",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Export XLSX files to XML",
   "main": "./lib/exporter.js",
   "type": "module",
