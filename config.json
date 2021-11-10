@@ -1,6 +1,7 @@
 {
   "parentTagName": "dictionary",
   "rowTagName": "entry",
+  "language": ["cat", "cze"],
   "stripTags": [
     "<span style=\"font-size:12pt;\">",
     "<span style=\"font-size:10pt;\">",

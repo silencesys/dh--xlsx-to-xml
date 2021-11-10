@@ -1,11 +1,11 @@
 {
-  "name": "catalan-dictionary",
-  "version": "0.0.2-prototype",
-  "description": "Export xslx files to XML",
-  "main": "exporter.js",
+  "name": "@silencesys/xlsx-to-xml",
+  "version": "1.0.0",
+  "description": "Export XLSX files to XML",
+  "main": "./lib/exporter.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "xlsx-to-xml": "./bin/index.js"
   },
   "author": "Martin Roček",
   "license": "MIT",
