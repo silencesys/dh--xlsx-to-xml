@@ -2,17 +2,22 @@
 
 This little tool converts two column XLSX Excel files to XML.
 
+<br>
+<br>
+
 ## How to use
 
 1. Install this package with NPM
 ```bash
 npm install -g @silencesys/xlsx-to-xml
 ```
-2. Create config file that should be used for the transformation
+2. Create config file that will be used for the transformation
 3. Run the tool
 ```bash
 xlsx-to-xml --input your_input_file.xml --output your_output_file.xml --config your_config.json
 ```
+
+<br>
 
 ### Available options
 | Option | Description |
@@ -21,6 +26,9 @@ xlsx-to-xml --input your_input_file.xml --output your_output_file.xml --config y
 | --output, -o | Set output file path |
 | --config, -c | Set path to config file |
 | --help, -h | Show help |
+
+<br>
+<br>
 
 ## Config file
 The config file is a standard JSON file with following structure:
@@ -54,8 +62,14 @@ As you can see there are several options that can be used. **There is no default
 | `replaceTags` | Optional | List of tags that should be replaced. These tags should always be defined as a JSON object containing keys `from` and `to`. Only opening tags but with all attributes should be defined there. |
 | `divideBy` | Optional | List of strings that should be used to divide the text. _You might want to include spaces following after these characters as the division method is quite dumb_.  |
 
+<br>
+<br>
+
 ## Contributing
 All the code is open source and you can contribute to the project by creating pull requests.
+
+<br>
+<br>
 
 ## License
 This project is licensed under the [MIT license](LICENSE.md).
