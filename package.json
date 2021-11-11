@@ -1,6 +1,6 @@
 {
   "name": "@silencesys/xlsx-to-xml",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Export XLSX files to XML",
   "main": "./lib/exporter.js",
   "type": "module",
@@ -17,6 +17,7 @@
   "author": "Martin Roček",
   "license": "MIT",
   "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
     "xlsx": "^0.17.2",
     "yargs": "^17.2.1"
   },

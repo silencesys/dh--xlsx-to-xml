@@ -3,7 +3,6 @@
 This little tool converts two column XLSX Excel files to XML.
 
 <br>
-<br>
 
 ## How to use
 
@@ -14,7 +13,7 @@ npm install -g @silencesys/xlsx-to-xml
 2. Create config file that will be used for the transformation
 3. Run the tool
 ```bash
-xlsx-to-xml --input your_input_file.xml --output your_output_file.xml --config your_config.json
+xlsx-to-xml --input your_input_file.xlsx --output your_output_file.xml --config your_config.json
 ```
 
 <br>
@@ -22,12 +21,13 @@ xlsx-to-xml --input your_input_file.xml --output your_output_file.xml --config y
 ### Available options
 | Option | Description |
 | ------ | ----------- |
-| --input, -i | Set path to input file |
-| --output, -o | Set output file path |
-| --config, -c | Set path to config file |
+| --input, -i | The input file to be converted to xlsx |
+| --output, -o | The output file to be created |
+| --config, -c | The config file that will be used |
+| --dirty | Set this flag if you want to see XHTML tags added by XLSX transformer |
+| --ignore-halves | Set this flag if you want to ignore rows that has one column empty |
 | --help, -h | Show help |
 
-<br>
 <br>
 
 ## Config file
@@ -63,12 +63,19 @@ As you can see there are several options that can be used. **There is no default
 | `divideBy` | Optional | List of strings that should be used to divide the text. _You might want to include spaces following after these characters as the division method is quite dumb_.  |
 
 <br>
+
+### How to write a config file
+I'm sure you ask how am I supposed to know which XHTML tags will be used in my XLSX document after conversion. Well, for that purpose there is a very simple way. Just run following command:
+```bash
+xlsx-to-xml --input your_input_file.xlsx --dirty
+```
+This will output a _dirty_ file containing XML with all XHTML tags. You can then decide which tags should be stripped or replaced and which should be kept. Just keep in mind that tags `<dirty-list>` and `<dirty-row>` are added by this tool and will be replaced by `parentTagName` and `rowTagName` respectively.
+
 <br>
 
 ## Contributing
 All the code is open source and you can contribute to the project by creating pull requests.
 
-<br>
 <br>
 
 ## License
